@@ -62,7 +62,8 @@ body {
 .btn__google {
   background-color: var(--sl-btn-blue);
   color: white;
-  background-image: url('../images/logo-google.png'), linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255));
+  background-image: url("../images/logo-google.png"),
+    linear-gradient(rgba(255, 255, 255), rgba(255, 255, 255));
   background-repeat: no-repeat;
   background-size: 2.5rem 2.5rem;
   background-position: 10px 9.5px;
@@ -72,6 +73,11 @@ nav,
 header {
   color: white;
   padding: 0 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -156,7 +162,7 @@ header {
     object-fit: contain;
   }
 
-  .header-callout h1, 
+  .header-callout h1,
   .header-callout p {
     text-align: center;
   }
@@ -169,6 +175,48 @@ header {
     height: 35px;
     padding: 0.6rem;
   }
+
+  .info-img__container {
+    width: 100%;
+  }
+
+  .info-img__container img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .section__info {
+    padding: 2.5rem 0;
+  }
+
+  .section__info--text {
+    padding: 1rem;
+  }
+
+  .section__info h2 {
+    font-size: 1.6rem;
+    line-height: 2.6ch;
+  }
+
+  .section__info--text p {
+    font-weight: 600;
+  }
+
+  .section__info--text a {
+    color: var(--sl-links-blue);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* .section__info--text a > span::after {
+    /* display: inline-block; */
+    text-rendering: auto;
+    margin-left: 0.1rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    /* content: "\f061"; */
+    content: "➡️";
+  } */
 }
 
 @media (width > 768px and width < 1024px) {
