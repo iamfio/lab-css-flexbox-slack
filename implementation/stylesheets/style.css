@@ -68,6 +68,10 @@ body {
   border-color: var(--sl-bg-purple);
 }
 
+.b-white {
+  border: 1px solid white;
+}
+
 .btn__google {
   background-color: var(--sl-btn-blue);
   color: white;
@@ -138,6 +142,21 @@ main {
   justify-content: space-around;
 }
 
+.container-welcome {
+  background-color: var(--sl-bg-purple);
+  color: white;
+  text-align: center;
+  position: relative;
+  height: auto;
+  min-height: 230px;
+  padding-bottom: 80px;
+  clip-path: ellipse(120% 100% at center top);
+}
+
+.container-welcome h3 {
+  font-size: 2rem;
+}
+
 @media (width < 768px) {
   .btn {
     width: 100%;
@@ -155,6 +174,7 @@ main {
   .container-btn {
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
   }
 
   .container-btn button {
@@ -244,8 +264,13 @@ main {
     font-weight: 600;
   }
 
+  .enterprise ul {
+    padding: 1rem 2.5rem;
+  }
+
   .enterprise li {
     list-style: none;
+    padding: 0.2rem 0;
   }
 
   .enterprise li span {
