@@ -45,18 +45,27 @@ body {
   text-align: center;
   letter-spacing: 0.8px;
   display: block;
-  border-width: 0;
+  border-width: 1px;
+  border-color: transparent;
   border-radius: 4px;
-  padding: 19px 40px 20px;
+  padding: 18px 40px 19px;
   cursor: pointer;
-}
-
-.btn--primary {
 }
 
 .btn--secondary {
   background-color: white;
   color: var(--sl-bg-purple);
+}
+
+.btn--primary__dark {
+  color: white;
+  background-color: var(--sl-bg-purple);
+}
+
+.btn--primary__light {
+  background-color: white;
+  color: var(--sl-bg-purple);
+  border-color: var(--sl-bg-purple);
 }
 
 .btn__google {
@@ -130,6 +139,9 @@ main {
 }
 
 @media (width < 768px) {
+  .btn {
+    width: 100%;
+  }
   /* Nav disabled */
   .nav-header {
     display: none;
@@ -186,7 +198,7 @@ main {
   }
 
   .section__info {
-    padding: 2.5rem 0;
+    padding: 1.6rem 0;
   }
 
   .section__info--text {
@@ -200,6 +212,7 @@ main {
 
   .section__info--text p {
     font-weight: 600;
+    line-height: 1.5;
   }
 
   .section__info--text a {
@@ -209,14 +222,51 @@ main {
   }
 
   /* .section__info--text a > span::after {
-    /* display: inline-block; */
     text-rendering: auto;
     margin-left: 0.1rem;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    /* content: "\f061"; */
-    content: "➡️";
+    content: "\f061";
   } */
+
+  .enterprise {
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+  }
+
+  .enterprise h3 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    padding: 0 1rem;
+  }
+
+  .enterprise > p {
+    font-weight: 600;
+  }
+
+  .enterprise li {
+    list-style: none;
+  }
+
+  .enterprise li span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--sl-bg-purple);
+  }
+
+  .enterprise li p:not(span) {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .endnote {
+    font-family: "Helvetica Neue";
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.2857;
+    letter-spacing: normal;
+    color: darkgray;
+  }
 }
 
 @media (width > 768px and width < 1024px) {
